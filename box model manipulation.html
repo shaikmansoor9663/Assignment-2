@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Manipulation Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+  /* Manipulate box model properties */
+.container {
+    width: 80%; /* Set width of the container */
+    margin: 20px auto; /* Center the container horizontally and add margin around it */
+    background-color: #f0f0f0; /* Set background color of the container */
+    padding: 20px; /* Add padding inside the container */
+}
+
+.box {
+    background-color: #fff; /* Set background color of the box */
+    border: 2px solid #333; /* Add border to the box */
+    padding: 20px; /* Add padding inside the box */
+    margin-top: 20px; /* Add margin on the top of the box */
+    margin-bottom: 20px; /* Add margin on the bottom of the box */
+}
+
+p {
+    margin: 0; /* Remove default margin of the paragraph */
+}
+
+  </style>
+    <div class="container">
+        <div class="box">
+            <p>This is a box with manipulated box model properties.</p>
+        </div>
+    </div>
+</body>
+</html>

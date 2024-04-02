@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear Techniques Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+  /* Float and clear techniques */
+.container {
+    width: 80%; /* Set width of the container */
+    margin: 20px auto; /* Center the container horizontally and add margin around it */
+}
+
+.left, .right {
+    float: left; /* Float elements to the left */
+    width: 50%; /* Set width of floated elements */
+    padding: 10px; /* Add padding to floated elements */
+    box-sizing: border-box; /* Include padding in element's total width */
+}
+
+.left img, .right img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.clearfix {
+    clear: both; /* Clear floats */
+}
+
+  </style>
+    <div class="container">
+        <div class="left">
+            <img src="/storage/emulated/0/Download/images6.jpeg" alt="Image 1">
+            <p>This is a floated image on the left.</p>
+        </div>
+        <div class="right">
+            <img src="image2.jpg" alt="Image 2">
+            <p>This is a floated image on the right.</p>
+        </div>
+        <div class="clearfix"></div> <!-- Clear floats -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+  /* Reset default margin and padding */
+body, header, footer, aside, main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style container */
+.container {
+    display: flex; /* Use flexbox for layout */
+}
+
+/* Style sidebar */
+.sidebar {
+    width: 20%; /* Set width of sidebar */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Style main content */
+main {
+    flex: 1; /* Use remaining space */
+    padding: 20px;
+}
+
+/* Style footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Change to column layout */
+    }
+    .sidebar {
+        width: 100%; /* Occupy full width */
+    }
+}
+
+  </style>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </aside>
+
+        <main>
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+          <p></p>
+        </main>
+    </div>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
